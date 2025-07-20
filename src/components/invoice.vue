@@ -151,23 +151,53 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { defineProps } from "vue";
 
-const props = defineProps({
+interface Product {
+  product: string;
+  quantity: string;
+  price: string;
+}
+
+interface InvoiceData {
   invoice: {
-    required: true,
-    type: Object,
-  },
-});
+    number: string;
+    date: string;
+    total: string;
+    taxPrice: string;
+    taxRate: string;
+    priceWithoutTax: string;
+  };
+  seller: {
+    name: string;
+    address: string;
+    town: string;
+    province: string;
+    postal_code: string;
+  };
+  buyer: {
+    name: string;
+    address: string;
+    town: string;
+    province: string;
+    postal_code: string;
+  };
+  products: Product[];
+  version: string;
+}
+
+const props = defineProps<{
+  invoice: InvoiceData;
+}>();
 
 const logoUrl = "";
 
-const formatCurrency = (amount) => {
+const formatCurrency = (amount: string) => {
   return new Intl.NumberFormat("es-ES", {
     style: "currency",
     currency: "EUR",
     minimumFractionDigits: 2,
-  }).format(amount);
+  }).format(Number(amount));
 };
 </script>

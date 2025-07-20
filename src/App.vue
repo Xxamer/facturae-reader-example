@@ -27,7 +27,7 @@ const loadFacturae = (facturae) => {
     invoice.value = facturae ;
     loading.value = false
     loaded.value = true
-  }, 1400);
+  }, 500);
   console.log(facturae);
 };
 </script>
