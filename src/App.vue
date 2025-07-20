@@ -6,7 +6,7 @@
        Descarga una factura de prueba 
        <br />
         <a
-          href="/public/factura_sample.xml"
+          href="/factura_sample.xml"
           class="text-indigo-600 hover:underline"
           download
         >
