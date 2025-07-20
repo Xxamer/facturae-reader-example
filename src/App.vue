@@ -2,6 +2,17 @@
   <div class="p-4">
     <div class="text-center mb-6 bg-indigo-50 p-4 rounded-lg shadow-md">
       <fileUploader @loadFacturae="loadFacturae" />
+      <div class="text-gray-600 mt-2">
+       Descarga una factura de prueba 
+       <br />
+        <a
+          href="/public/factura_sample.xml"
+          class="text-indigo-600 hover:underline"
+          download
+        >
+          factura_sample.xml
+        </a>
+      </div>
     </div>
     <div v-if="loading" class="flex justify-center items-center h-screen">
       <div class="rounded-full h-20 w-20 bg-violet-800 animate-ping"></div>

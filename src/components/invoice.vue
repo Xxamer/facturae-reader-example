@@ -34,7 +34,7 @@
                   <span class="text-gray-700">{{ invoice.invoice.date }}</span>
                 </p>
                 <p class="text-sm text-gray-500">
-                  Invoice #:
+                  Factura #:
                   <span class="text-gray-700">{{
                     invoice.invoice.number
                   }}</span>
@@ -47,7 +47,7 @@
 
           <!-- Bill To Section -->
           <div class="mb-8">
-            <h3 class="text-lg font-semibold text-indigo-600 mb-4">Bill To:</h3>
+            <h3 class="text-lg font-semibold text-indigo-600 mb-4">Cobrar a:</h3>
             <div class="bg-gray-50 rounded-lg p-4">
               <p class="font-medium text-gray-900">{{ invoice.buyer.name }}</p>
               <p class="text-gray-600">{{ invoice.buyer.address }}</p>
@@ -69,17 +69,17 @@
                     <th
                       class="text-left py-4 px-6 font-semibold text-indigo-700"
                     >
-                      DESCRIPTION
+                      DESCRIPCIÓN
                     </th>
                     <th
                       class="text-center py-4 px-6 font-semibold text-indigo-700"
                     >
-                      QUANTITY
+                      CANTIDAD
                     </th>
                     <th
                       class="text-right py-4 px-6 font-semibold text-indigo-700"
                     >
-                      PRICE
+                      PRECIO
                     </th>
                   </tr>
                 </thead>
@@ -141,7 +141,15 @@
           <div class="mt-12 pt-8 border-t border-gray-200">
             <div class="text-center">
               <p class="text-sm text-gray-500 font-medium tracking-wider">
-                PAY-ME
+                Developed with ❤️ by
+                <a
+                  href="https://github.com/Xxamer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-indigo-600 hover:underline"
+                >
+                Christian Granado 
+                </a>
               </p>
             </div>
           </div>

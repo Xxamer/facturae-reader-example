@@ -7,7 +7,7 @@
     @dragenter.prevent="isDragging = true"
     @dragleave.prevent="isDragging = false"
   >
-    <p class="mb-2 text-gray-600">Drop your files here</p>
+    <p class="mb-2 text-gray-600">Arrastra y suelta tus archivos aquí</p>
     <input
       class="border border-gray-300 rounded-md text-center p-2"
       type="file"
